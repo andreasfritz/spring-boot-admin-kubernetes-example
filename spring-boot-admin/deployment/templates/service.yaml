@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.name }}
+  annotations:
+    spring-boot-admin: "true"
+spec:
+  ports:
+    - port: 8080
+      targetPort: service
+      protocol: TCP
+      name: service
+    - port: 8081
+      targetPort: management
+      protocol: TCP
+      name: management
+  selector:
+    app: {{ .Values.name }}
