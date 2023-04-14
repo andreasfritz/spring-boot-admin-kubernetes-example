@@ -3,19 +3,16 @@ server:
 spring:
   application: # Application-Infos for the Info-Actuator
     name: "@pom.artifactId@"
+  # Spring Boot Admin
   boot:
     admin:
       ui:
-        public-url: http://localhost:8080
-        title: "Spring Boot Admin - Kubernetes"
-      discovery:
+        # public-url: http://localhost:8080
+        title: Spring Boot Admin - Kubernetes
+        brand: <img src="assets/img/icon-spring-boot-admin.svg"><span>Spring Boot Admin - Kubernetes</span>
+      discovery: # Filter discovery to tagged services
         instances-metadata:
           spring-boot-admin: true
-  cloud:
-    kubernetes:
-      discovery:
-        enabled: true
-        primary-port-name: service
 management: # Actuator Configuration
   server:
     port: 8081

@@ -12,10 +12,14 @@
 
     helm install hello-world deployment
 
-## Check deployment
+### Check deployment
 
     kubectl get pods -o wide
     kubectl get services -o wide
+
+### Uninstall
+
+     helm uninstall spring-boot-admin
 
 ## Access App
 

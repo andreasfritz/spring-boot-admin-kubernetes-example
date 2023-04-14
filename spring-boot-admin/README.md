@@ -12,18 +12,14 @@
 
     helm install spring-boot-admin deployment
 
-### Redeploy
+### Check deployment
 
-    helm upgrade spring-boot-admin deployment
+    kubectl get pods -o wide
+    kubectl get services -o wide
 
 ### Uninstall
 
      helm uninstall spring-boot-admin
-
-## Check deployment
-
-    kubectl get pods -o wide
-    kubectl get services -o wide
 
 ## Access App
 

@@ -24,6 +24,7 @@
     <spring-cloud.version>2022.0.1</spring-cloud.version>
   </properties>
 
+  <!-- Kubernetes Discovery -->
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -38,34 +39,27 @@
 
   <dependencies>
     <dependency>
-      <groupId>de.codecentric</groupId>
-      <artifactId>spring-boot-admin-starter-server</artifactId>
-      <version>${spring-boot-admin.version}</version>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <!-- Spring Boot Admin -->
+    <dependency>
+      <groupId>de.codecentric</groupId>
+      <artifactId>spring-boot-admin-starter-server</artifactId>
+      <version>${spring-boot-admin.version}</version>
+    </dependency>
+
+    <!-- Kubernetes Discovery -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-kubernetes-fabric8</artifactId>
     </dependency>
-
-    <!-- Supporting -->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
   </dependencies>
 
   <build>
     <finalName>app</finalName>
-
     <plugins>
-
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -74,12 +68,13 @@
             <id>repackage</id>
             <goals>
               <goal>repackage</goal>
+              <!-- Build-Infos for Info-Actuator -->
               <goal>build-info</goal>
             </goals>
           </execution>
         </executions>
       </plugin>
-
+      <!-- GIT-Infos for Info-Actuator -->
       <plugin>
         <groupId>io.github.git-commit-id</groupId>
         <artifactId>git-commit-id-maven-plugin</artifactId>
@@ -87,7 +82,6 @@
           <offline>true</offline>
         </configuration>
       </plugin>
-
     </plugins>
   </build>
 
