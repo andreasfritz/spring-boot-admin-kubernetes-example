@@ -1,0 +1,24 @@
+name: hello-world
+namespace: default
+
+deployment:
+  image: hello-world
+  pullPolicy: Never
+  updateStrategy: RollingUpdate
+  maxSurge: 100%
+  maxUnavailable: 0%
+  replicas: 2
+  restartPolicy: Always
+  terminationGracePeriodSeconds: 300
+  livenessProbe:
+    initialDelaySeconds: 120
+    timeoutSeconds: 10
+    periodSeconds: 10
+    successThreshold: 1
+    failureThreshold: 5
+  readinessProbe:
+    initialDelaySeconds: 5
+    timeoutSeconds: 1
+    successThreshold: 1
+    periodSeconds: 10
+    failureThreshold: 3
