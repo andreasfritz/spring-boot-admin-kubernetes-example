@@ -24,3 +24,4 @@
 ## Build & Deploy Apps
 
 - [./hello-world/README.md](./hello-world/README.md)
+- [./spring-boot-admin/README.md](./spring-boot-admin/README.md)
