@@ -9,7 +9,8 @@
 
 ### Documentation
 
-<https://docs.docker.com/desktop/kubernetes/>
+- <https://docs.docker.com/desktop/kubernetes/>
+- <https://kubernetes.io/docs/reference/kubectl/cheatsheet/>
 
 ### Change Kubernetes Context
 
@@ -20,6 +21,10 @@
 
     brew install helm
     helm version
+
+### Documentation
+
+- <https://helm.sh/docs/intro/quickstart/>
 
 ## Build & Deploy Apps
 
