@@ -21,6 +21,10 @@
 
      helm uninstall spring-boot-admin
 
+## Build & Deploy Script
+
+    ./buildAndDeploy.sh
+
 ## Access App
 
     kubectl port-forward <pod-name> 8080:8080 8081:8081
