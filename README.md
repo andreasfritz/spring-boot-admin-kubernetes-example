@@ -26,6 +26,10 @@
 
 - <https://helm.sh/docs/intro/quickstart/>
 
+## Install Traefik
+
+- [./traefik/README.md](./traefik/README.md)
+
 ## Build & Deploy Apps
 
 - [./hello-world/README.md](./hello-world/README.md)
