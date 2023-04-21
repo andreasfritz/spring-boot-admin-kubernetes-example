@@ -5,12 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableAdminServer
-@EnableDiscoveryClient
+// Enable scheduled discovery of services
 @EnableScheduling
 public class SpringBootAdminApplication extends SpringBootServletInitializer {
 
@@ -20,5 +19,4 @@ public class SpringBootAdminApplication extends SpringBootServletInitializer {
     app.setApplicationStartup(new BufferingApplicationStartup(2048));
     app.run();
   }
-
 }
