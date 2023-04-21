@@ -8,7 +8,7 @@
 
     docker build --tag spring-boot-admin .
 
-## Deploy App
+## Install App
 
     helm install spring-boot-admin deployment
 

@@ -6,5 +6,5 @@ helm uninstall hello-world
 mvn clean install
 # Build Docker Image
 docker build --tag hello-world .
-# Deploy App
+# Install App
 helm install hello-world deployment

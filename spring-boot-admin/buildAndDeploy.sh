@@ -6,5 +6,5 @@ helm uninstall spring-boot-admin
 mvn clean install
 # Build Docker Image
 docker build --tag spring-boot-admin .
-# Deploy App
+# Install App
 helm install spring-boot-admin deployment

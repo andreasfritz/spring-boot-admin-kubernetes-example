@@ -8,7 +8,7 @@
 
     docker build --tag hello-world .
 
-## Deploy App
+## Install App
 
     helm install hello-world deployment
 
