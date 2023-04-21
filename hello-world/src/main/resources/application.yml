@@ -40,6 +40,7 @@ info: # Application-Infos for the Info-Actuator
   description: "@pom.description@"
   version: "@pom.version@"
   spring-boot: "@pom.parent.version@"
+  # Tags for the Spring Boot Admin UI
   tags:
     spring-boot: "@pom.parent.version@"
 logging: # Logging-File for the Logfile-Actuator

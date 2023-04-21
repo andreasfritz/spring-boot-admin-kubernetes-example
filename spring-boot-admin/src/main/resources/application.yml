@@ -47,6 +47,7 @@ info: # Application-Infos for the Info-Actuator
   version: "@pom.version@"
   spring-boot: "@pom.parent.version@"
   spring-boot-admin: "@spring-boot-admin.version@"
+  # Tags for the Spring Boot Admin UI
   tags:
     spring-boot: "@pom.parent.version@"
     spring-boot-admin: "@spring-boot-admin.version@"

@@ -28,7 +28,7 @@ spec:
         imagePullPolicy: {{ .Values.deployment.pullPolicy }}
         ports:
         - containerPort: 8080
-          name: service
+          name: http
           protocol: TCP
         - containerPort: 8081
           name: management

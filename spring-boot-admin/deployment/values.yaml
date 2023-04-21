@@ -3,6 +3,7 @@ namespace: default
 
 deployment:
   image: spring-boot-admin
+  # not recommended for production
   pullPolicy: Never
   updateStrategy: RollingUpdate
   maxSurge: 100%
