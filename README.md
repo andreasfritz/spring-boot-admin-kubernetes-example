@@ -30,7 +30,7 @@
 
 - [./traefik/README.md](./traefik/README.md)
 
-## Build & Deploy Apps
+## Build & Install Apps
 
 - [./hello-world/README.md](./hello-world/README.md)
 - [./spring-boot-admin/README.md](./spring-boot-admin/README.md)
