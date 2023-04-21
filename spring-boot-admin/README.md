@@ -29,9 +29,9 @@
 ## Access App
 
     kubectl get pods
-    kubectl port-forward <pod-name> 8080:8080 8081:8081
+    kubectl port-forward <pod-name> 9090:8080 9091:8081
 
 ### URI
 
-- http://localhost:8080/
-- http://localhost:8081/actuator
+- http://localhost:9090/
+- http://localhost:9091/actuator
