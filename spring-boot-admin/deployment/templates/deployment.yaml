@@ -26,6 +26,13 @@ spec:
       - name: {{ .Values.name }}
         image: {{ .Values.deployment.image }}
         imagePullPolicy: {{ .Values.deployment.pullPolicy }}
+        {{- with .Values.deployment.env }}
+        env:
+        {{- range $env_var, $key := . }}
+          - name: {{ $env_var }}
+            value: "{{ $key }}"
+        {{- end }}
+        {{- end }}
         ports:
         - containerPort: 8080
           name: http

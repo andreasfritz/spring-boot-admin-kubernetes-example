@@ -2,6 +2,8 @@ name: spring-boot-admin
 namespace: default
 
 deployment:
+  env:
+    SPRING_BOOT_ADMIN_UI_TITLE: Spring Boot Admin - Kubernetes
   image: spring-boot-admin
   # not recommended for production
   pullPolicy: Never
