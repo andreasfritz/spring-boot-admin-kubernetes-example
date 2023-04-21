@@ -16,6 +16,7 @@
 
     kubectl get pods -o wide
     kubectl get services -o wide
+    kubectl get ingress
 
 ### Uninstall
 
@@ -26,12 +27,15 @@
     chmod u+x buildAndDeploy.sh
     ./buildAndDeploy.sh
 
-## Access App
+## URI
+
+- http://localhost/
+
+## Access Actuator
 
     kubectl get pods
-    kubectl port-forward <pod-name> 9090:8080 9091:8081
+    kubectl port-forward <pod-name> 9091:8081
 
 ### URI
 
-- http://localhost:9090/
 - http://localhost:9091/actuator

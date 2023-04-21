@@ -7,7 +7,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /{{ .Values.name }}
+          - path: /
             pathType: Prefix
             backend:
               service:

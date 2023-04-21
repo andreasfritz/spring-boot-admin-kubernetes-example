@@ -16,6 +16,7 @@
 
     kubectl get pods -o wide
     kubectl get services -o wide
+    kubectl get ingress
 
 ### Uninstall
 
@@ -26,12 +27,15 @@
     chmod u+x buildAndDeploy.sh
     ./buildAndDeploy.sh
 
-## Access App
+## URI
+
+- http://localhost/hello-world (login: "user"/"password", see [application.yaml](./src/main/resources/application.yml))
+
+## Access Actuator
 
     kubectl get pods
-    kubectl port-forward <pod-name> 8080:8080 8081:8081
+    kubectl port-forward <pod-name> 8081:8081
 
 ### URI
 
-- http://localhost:8080/ (login: "user"/"password", see [application.yaml](./src/main/resources/application.yml))
 - http://localhost:8081/actuator
