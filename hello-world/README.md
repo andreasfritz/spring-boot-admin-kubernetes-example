@@ -22,10 +22,10 @@
 
      helm uninstall hello-world
 
-## Build & Deploy Script
+## Build & Install Script
 
-    chmod u+x buildAndDeploy.sh
-    ./buildAndDeploy.sh
+    chmod u+x buildAndInstall.sh
+    ./buildAndInstall.sh
 
 ## URI
 
