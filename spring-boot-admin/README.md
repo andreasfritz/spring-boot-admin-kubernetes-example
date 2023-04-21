@@ -23,10 +23,12 @@
 
 ## Build & Deploy Script
 
+    chmod u+x buildAndDeploy.sh
     ./buildAndDeploy.sh
 
 ## Access App
 
+    kubectl get pods
     kubectl port-forward <pod-name> 8080:8080 8081:8081
 
 ### URI
