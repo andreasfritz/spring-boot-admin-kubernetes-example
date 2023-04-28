@@ -16,22 +16,26 @@
 
     kubectl get pods -o wide
     kubectl get services -o wide
+    kubectl get ingress
 
 ### Uninstall
 
      helm uninstall spring-boot-admin
 
-## Build & Deploy Script
+## Build & Install Script
 
-    chmod u+x buildAndDeploy.sh
-    ./buildAndDeploy.sh
+    chmod u+x buildAndInstall.sh
+    ./buildAndInstall.sh
 
-## Access App
+## URI
+
+- http://localhost/spring-boot-admin
+
+## Access Actuator
 
     kubectl get pods
-    kubectl port-forward <pod-name> 9090:8080 9091:8081
+    kubectl port-forward <pod-name> 9091:8081
 
 ### URI
 
-- http://localhost:9090/
 - http://localhost:9091/actuator

@@ -26,7 +26,16 @@
 
 - <https://helm.sh/docs/intro/quickstart/>
 
-## Build & Deploy Apps
+## Install Traefik
+
+- [./traefik/README.md](./traefik/README.md)
+
+## Build & Install Apps
 
 - [./hello-world/README.md](./hello-world/README.md)
 - [./spring-boot-admin/README.md](./spring-boot-admin/README.md)
+
+## Uninstall Apps
+
+    chmod u+x uninstall.sh
+    ./uninstall.sh
