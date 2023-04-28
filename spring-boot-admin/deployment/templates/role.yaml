@@ -1,4 +1,4 @@
-# Allow Spring Boot Admin to discover services
+# Allow to discover services in the namespace
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
