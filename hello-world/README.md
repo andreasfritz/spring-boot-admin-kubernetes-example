@@ -29,7 +29,7 @@
 
 ## URI
 
-- http://localhost/hello-world (login: "user"/"password", see [application.yaml](./src/main/resources/application.yml))
+- http://localhost/hello-world
 
 ## Access Actuator
 

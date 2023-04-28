@@ -29,7 +29,7 @@
 
 ## URI
 
-- http://localhost/
+- http://localhost/spring-boot-admin
 
 ## Access Actuator
 

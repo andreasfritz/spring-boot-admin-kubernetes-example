@@ -1,10 +1,6 @@
 server:
   port: 8080
 spring:
-  security:
-    user:
-      name: "user"
-      password: "password"
   application: # Application-Infos for the Info-Actuator
     name: "@pom.artifactId@"
 management: # Actuator Configuration
