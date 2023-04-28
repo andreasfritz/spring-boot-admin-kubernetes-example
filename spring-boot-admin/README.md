@@ -17,6 +17,9 @@
     kubectl get pods -o wide
     kubectl get services -o wide
     kubectl get ingress
+    kubectl get serviceaccount
+    kubectl get role
+    kubectl get rolebinding -o wide
 
 ### Uninstall
 
